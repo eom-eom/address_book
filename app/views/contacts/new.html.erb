@@ -1,0 +1,12 @@
+	<%= link_to("<< Back to List", {:action => 'index'}, :class => 'back-link') %>
+
+<div class="info new">
+	<h2>Create Information</h2>
+	<%= form_for(:info_ad, :url => {:action =>'create'}) do |f| %>
+	<%= render(:partial => "shared/form", :locals => {:f => f}) %>
+	<div class = "form-buttons-new">
+		<%= submit_tag("Create Address") %>
+	</div>
+
+	<% end %>
+</div> 

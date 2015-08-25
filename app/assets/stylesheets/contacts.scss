@@ -1,0 +1,130 @@
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ol, ul, li,
+blockquote, pre, form, label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, section, summary, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+html { height: 100%; width: 100%; }
+body { width: 100%; min-width: 980px; height: 100%; margin: 0; padding: 0; 
+  color: #332318; background: #E8E8E8; text-align:center;}
+
+/* header */
+#header{
+
+	background: #980000;
+	color: white;
+	padding: 20px;
+	font-style: italic;
+	text-shadow:1px 2px 4px #FFF6E5,
+	  0px 0px 0px black,
+	0px 0px 2px white;
+	
+}
+
+/* main and contents*/
+
+#content{
+
+	padding-left: 50px;
+	padding-top: 50px;
+
+}
+div#content div{
+
+	display: inline;
+}
+
+#disp{
+
+	font-style: italic;
+}
+.listing{
+	margin-top:5px;
+	border-collapse: collapse;
+	margin-bottom: 150px;
+}
+
+table tr th, table tr td { text-align: left; 
+  padding: 	3px; }
+
+
+
+.header{
+	background: #980000;
+	
+	border-radius: 100%;
+	color: white;
+}
+
+.odd { background: none; }
+.even { background: white; }
+
+.notice { height: 1.25em; padding: 0.5em; text-align: center;
+  background: #FF9900; color: black; }
+
+div.info h2, div.info_ads h2{
+
+	margin-top: 20px;
+
+}
+
+div.info th, div.info_ads th{
+	text-align: left;
+
+}
+
+div.form-buttons-new{
+	margin-left: 549px;
+}
+
+div.form-buttons-edit{
+	margin-left: 544px;
+}
+
+div.form-buttons-delete{
+	margin-left: 330px;
+}
+
+.reference-name{
+	font-weight: bold;
+}
+div h2{
+margin-top: 20px;
+
+}
+
+/* links a */
+a { text-decoration: none;
+	border-radius: 10px;
+ }
+a:hover { text-decoration: underline; }
+
+/* large action buttons */
+a.action , a.back-link {padding: 2px 5px; 
+  background: #980000; color: white;  
+  text-decoration: none; font-size: 0.9em; text-align: center; }
+a.action:hover , a.back-link:hover { background: #FF9900; color:black;}
+
+/* small action buttons */
+.actions { width: 200px; }
+.actions a.action { float: left; min-width: 3.5em;
+  padding: 1px 2px; margin: 2px 5px; font-size: 0.9em; }
+
+ 
+/* footer */
+
+div#footer{
+	background: #333;
+	height : 20px;
+	color: white;
+    font-size: 90%;
+    text-align: center;
+
+    padding-top:  5px;
+   	margin-top: 50px;
+}

@@ -1,0 +1,14 @@
+<%= link_to("<< Back to List", {:action => 'index'}, :class => 'back-link') %>
+
+<div class="info edit">
+	<h2>Update Information</h2>
+	<%= form_for(:info_ad, :url => {:action =>'update', :id => @info_ad.id}) do |f| %>
+
+	<%= render(:partial => "shared/form", :locals => {:f => f}) %>
+
+	<div class = "form-buttons-edit">
+		<%= submit_tag("Update Address") %>
+	</div>
+
+	<% end %>
+</div> 

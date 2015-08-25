@@ -1,0 +1,43 @@
+<% @page_title = "Info" %>
+<div class="info_ads index">
+<%= link_to("Back to home", {:controller => 'access'}, :id => "backs")%>	
+	
+	<h2>Information</h2>	
+
+
+	<%= link_to(image_tag('plus_sign.png', :size => '11x11', :alt => '+') + " Add new Address", {:action => 'new'} , :class => 'action new')%>
+
+	<div id="disp"> <%= pluralize(@info_ads.size, 'data')%> found.</div>
+	
+	<table class="listing" summary="Address list">
+		<tr class= "header">
+			
+			<th>Id.no</th>
+			<th>First name</th>
+			<th>Last name</th>
+			<th>E-mail</th>
+			<th>Street</th>
+			<th>City</th>
+			<th>State</th>
+			<th>Zip code</th>
+			<th>Actions</th>
+		</tr>
+		<% @info_ads.each do |info|%>
+		<tr class = "<%= cycle('odd', 'even')%>">
+			<td><%= info.id %></td>
+			<td><%= info.first_name %></td>
+			<td><%= info.last_name %></td>
+			<td><%= info.email %></td>
+			<td><%= info.street %></td>
+			<td><%= info.city %></td>
+			<td><%= info.state %></td>
+			<td><%= info.zip_code %></td>
+			<td class="actions">
+				<%= link_to("Show",{:action => 'show', :id => info.id}, :class => 'action show') %>
+				<%= link_to("Edit", {:action => 'edit', :id => info.id}, :class => 'action edit') %>
+				<%= link_to("Delete", {:action => 'delete', :id => info.id}, :class => 'action delete') %> 
+			</td> 
+		</tr>
+		<% end %>
+	</table>
+</div>

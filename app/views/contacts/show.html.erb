@@ -1,0 +1,49 @@
+
+<%= link_to("<< Back to List", {:action => 'index'}, :class => 'back-link') %>
+
+<div class="info_ads show">
+	<h2>Show Information</h2>
+
+	<table summary="Address detail view">
+		<tr>
+			<th>First name:</th>
+			<td><%= @info_ad.first_name %></td> 
+		</tr>
+		<tr>
+			<th>Last name:</th>
+			<td><%= @info_ad.last_name %></td> 
+		</tr>
+		<tr>
+			<th>E-mail:</th>
+			<td><%= @info_ad.email %></td> 
+		</tr>
+		<tr>
+			<th>Street:</th>
+			<td><%= @info_ad.street %></td> 
+		</tr>
+		<tr>
+			<th>City:</th>
+			<td><%= @info_ad.city %></td> 
+		</tr>
+		<tr>
+			<th>State:</th>
+			<td><%= @info_ad.state %></td> 
+		</tr>
+		<tr>
+			<th>Zip code:</th>
+			<td><%= @info_ad.zip_code %></td> 
+		</tr>
+		<tr>
+			<th>Created:</th>
+			<td><%= @info_ad.created_at %></td>
+		</tr>
+		<tr>
+			<th>Updated:</th>
+			<td><%= @info_ad.updated_at %></td>
+		</tr>
+	</table>
+
+	
+
+	
+</div>
